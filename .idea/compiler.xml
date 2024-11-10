@@ -11,12 +11,14 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Order-Service" target="1.5" />
       <module name="Product-service" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Gateway" options="-parameters" />
+      <module name="Order-Service" options="" />
       <module name="Product-Service" options="-parameters" />
       <module name="Product-service" options="-parameters" />
     </option>
