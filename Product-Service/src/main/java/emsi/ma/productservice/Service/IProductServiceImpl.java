@@ -2,14 +2,17 @@ package emsi.ma.productservice.Service;
 
 import emsi.ma.productservice.Entity.Product;
 import emsi.ma.productservice.Repository.ProductRepo;
+import emsi.ma.productservice.Service.IProductService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class IProductServiceImpl implements IProductService{
+public class IProductServiceImpl implements IProductService {
     @Autowired
     public ProductRepo productRepo;
     @Override
@@ -42,8 +45,8 @@ public class IProductServiceImpl implements IProductService{
 
 
     @Override
-    public List<Product> findAllProducts() {
-        return productRepo.findAll();
+    public Page<Product> findAllProducts(Pageable pageable) {
+        return  productRepo.findAll(pageable);
     }
 
     @Override
