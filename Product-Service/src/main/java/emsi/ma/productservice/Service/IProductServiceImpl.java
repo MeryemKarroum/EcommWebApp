@@ -29,18 +29,19 @@ public class IProductServiceImpl implements IProductService {
         return String.format("le produit %d n'existe pas ",id);
     }
 
-    @Override
     public String updateProduct(Integer id, Product p) {
-        Product product=productRepo.findById(id).get();
-        if(product != null){
-            product.setId(p.id);
-            product.setPrice(p.price);
-            product.setCategory(p.category);
-            product.setName(p.name);
-            product.setDescription(p.description);
-            return "Produit est modifié";
+        Optional<Product> optionalProduct = productRepo.findById(id);
+        if (optionalProduct.isPresent()) {
+            Product product = optionalProduct.get();
+            product.setPrice(p.getPrice());
+            product.setCategory(p.getCategory());
+            product.setName(p.getName());
+            product.setDescription(p.getDescription());
+
+            productRepo.save(product);
+            return "Produit modifié avec succès";
         }
-         return "Le produit n'existe pas ";
+        return "Le produit n'existe pas";
     }
 
 
