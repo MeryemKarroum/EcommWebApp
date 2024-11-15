@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Date;
 import java.util.List;
 
-@Controller
+@RestController
 public class OrderController {
     @Autowired
     OrderServiceImpl orderService;
@@ -43,8 +43,9 @@ public class OrderController {
         return orderService.updateOrder(id,order);
     }
 
-    @GetMapping("/Orders")
+    @GetMapping("/OrdersDate")
     public List<Order> getOrderByDate(@RequestBody Date date){
+
         return orderService.getOrderByDate(date);
     }
 }

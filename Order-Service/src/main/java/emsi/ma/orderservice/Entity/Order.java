@@ -12,10 +12,13 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
+@Table(name = "orders")
 public class Order {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer orderId;
     Date orderDate;
+    Integer quantity;
     @ManyToMany
-    List<productDTO> orderItemsDTOList;
+    List<product> productOrdered;
+
 }

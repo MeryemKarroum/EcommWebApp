@@ -48,8 +48,9 @@ public class OrderServiceImpl implements OrderService{
         if(order1.isPresent()){
             Order ord=order1.get();
             ord.setOrderId(order.getOrderId());
-            ord.setOrderItemsDTOList(order.getOrderItemsDTOList());
+            ord.setProductOrdered(ord.getProductOrdered());
             ord.setOrderDate(order.getOrderDate());
+            ord.setQuantity(order.getQuantity());
             return String.format("la commande %d est modifié",id);
         }
         return String.format("la commande %d n'existe pas",id);

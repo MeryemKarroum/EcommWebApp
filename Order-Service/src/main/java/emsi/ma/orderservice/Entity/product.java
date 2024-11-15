@@ -12,7 +12,7 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class productDTO {
+public class product {
     @Id
     public Integer id;
     public String name;
