@@ -1,1 +1,31 @@
+server:
+  port: 8080  # Gateway port
+
+spring:
+  application:
+    name: Gateway-Service  # This is the name registered in Eureka
+
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true  # Automatically map services registered in Eureka
+      routes:
+        - id: r1
+          uri: lb://Order-Service
+          predicates:
+            - Path=/orders/**
+        - id: r2
+          uri: lb://Product-Service
+          predicates:
+            - Path=/products/**
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/  # Eureka server URL
+
+  instance:
+    prefer-ip-address: true  # Optional, helps identify instances
+
 
