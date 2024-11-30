@@ -15,35 +15,36 @@ import java.util.Date;
 import java.util.List;
 
 @RestController
+@RequestMapping("/orders")
 public class OrderController {
     @Autowired
     OrderServiceImpl orderService;
-    @GetMapping("/Orders")
+    @GetMapping
     public Page<Order> getOrders(@RequestParam(defaultValue="0")int page, @RequestParam(defaultValue="10")int size){
         Pageable p= PageRequest.of(page,size);
         return  orderService.getOrders(p);
     }
 
-    @GetMapping("/order/{id}")
+    @GetMapping("/{id}")
     public Order getOrderById(@PathVariable Integer id){
         return orderService.getOrderById(id);    }
 
-    @PostMapping("/addOrder")
+    @PostMapping("/add")
     public void addOrder(Order order){
         orderService.createOrder(order);
     }
 
-    @DeleteMapping("/deleteOrder/{id}")
+    @DeleteMapping("/delete/{id}")
     public String deleteOrder(@PathVariable Integer id){
         return orderService.deleteOrder(id);
     }
 
-    @PostMapping("/updateOrder/{id}")
+    @PostMapping("/update/{id}")
     public String updateOrder(@PathVariable Integer id,@RequestBody Order order){
         return orderService.updateOrder(id,order);
     }
 
-    @GetMapping("/OrdersDate")
+    @GetMapping("/Date")
     public List<Order> getOrderByDate(@RequestBody Date date){
 
         return orderService.getOrderByDate(date);

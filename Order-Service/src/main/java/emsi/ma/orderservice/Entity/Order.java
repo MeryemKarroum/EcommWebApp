@@ -18,7 +18,4 @@ public class Order {
     Integer orderId;
     Date orderDate;
     Integer quantity;
-    @ManyToMany
-    List<product> productOrdered;
-
 }

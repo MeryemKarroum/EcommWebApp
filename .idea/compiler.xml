@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Order-Service" />
         <module name="Discovery-Service" />
+        <module name="Category-Service" />
         <module name="Gateway" />
         <module name="Product-Service" />
       </profile>
@@ -18,6 +19,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Category-Service" options="-parameters" />
       <module name="Discovery-Service" options="-parameters" />
       <module name="Gateway" options="-parameters" />
       <module name="Order-Service" options="-parameters" />

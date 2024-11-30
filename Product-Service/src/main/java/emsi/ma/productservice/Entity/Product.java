@@ -13,14 +13,13 @@ public class Product {
     public String name;
     public String description;
     public Double price;
-    public String category;
 
     public Product(Integer id, String name, String description, Double price, String category) {
         this.id = id;
         this.name = name;
         this.description = description;
         this.price = price;
-        this.category = category;
+
     }
 
     public Product() {
@@ -59,11 +58,4 @@ public class Product {
         this.price = price;
     }
 
-    public String getCategory() {
-        return category;
-    }
-
-    public void setCategory(String category) {
-        this.category = category;
-    }
 }

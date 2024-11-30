@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+@RequestMapping("/products")
 public class ProductController {
     @Autowired
     IProductService productService;
@@ -25,17 +26,17 @@ public class ProductController {
         return productService.updateProduct(id, p);
     }
 
-    @GetMapping("/produits")
+    @GetMapping
     public Page<Product> afficherProduit(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size){
       Pageable pageable= PageRequest.of(page, size);
      return productService.findAllProducts(pageable);
     }
 
-    @GetMapping("/products/search/{productName}")
+    @GetMapping("/search/name/{productName}")
     public List<Product> searchProductByName(@PathVariable String productName){
         return productService.findProductsByName(productName);
     }
-    @GetMapping("/products/search/{category}")
+    @GetMapping("/search/category/{category}")
     public List<Product> searchProductByCategory(@PathVariable String category){
         return productService.findProductsByCategory(category);
     }
