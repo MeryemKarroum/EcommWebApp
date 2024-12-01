@@ -4,8 +4,11 @@
     <file url="file://$PROJECT_DIR$/Category-Service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Discovery-Service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Order-Details/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Order-Service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Order-Service/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/OrderDetails-Service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Product-Service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/User-Service/src/main/java" charset="UTF-8" />
   </component>
 </project>

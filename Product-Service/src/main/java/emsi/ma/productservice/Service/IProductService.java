@@ -11,10 +11,10 @@ public interface IProductService {
     public void addProduct(Product p);
     public String deleteProduct(Integer id);
     public String updateProduct(Integer id,Product p);
-
+    public Product findProductById(Integer id);
     public Page<Product> findAllProducts(Pageable pageable);
     public List<Product> findProductsByName(String name );
-    public List<Product> findProductsByCategory(String category);
+    public List<Product> findProductsByCategory(Integer category);
     public List<Product> findProductsByPriceLessThan(Double price);
 
 }

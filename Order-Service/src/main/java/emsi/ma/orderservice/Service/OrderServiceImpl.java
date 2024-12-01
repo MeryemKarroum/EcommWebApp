@@ -1,7 +1,9 @@
 package emsi.ma.orderservice.Service;
 
+import emsi.ma.orderservice.Clients.ProductRestClient;
 import emsi.ma.orderservice.Entity.Order;
 import emsi.ma.orderservice.Repository.OrderRepo;
+import emsi.ma.orderservice.models.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -11,14 +13,25 @@ import java.util.Date;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 @Service
 public class OrderServiceImpl implements OrderService{
     @Autowired
     OrderRepo orderRepo;
+    @Autowired
+    ProductRestClient productRestClient;
     @Override
     public Page<Order> getOrders(Pageable p) {
-        return orderRepo.findAll(p);
+
+        Page<Order> orderList =orderRepo.findAll(p);
+        orderList.forEach(order -> {
+            List<Product> products = order.getProductIds().stream()
+                    .map(productId -> productRestClient.getProductById(productId))
+                    .collect(Collectors.toList());
+            order.setProduct(products);
+        });
+          return orderList;
     }
 
     @Override
@@ -48,9 +61,9 @@ public class OrderServiceImpl implements OrderService{
         if(order1.isPresent()){
             Order ord=order1.get();
             ord.setOrderId(order.getOrderId());
-            ord.setProductOrdered(ord.getProductOrdered());
             ord.setOrderDate(order.getOrderDate());
-            ord.setQuantity(order.getQuantity());
+            ord.setProductIds(order.getProductIds());
+            ord.setClientId(order.getClientId());
             return String.format("la commande %d est modifié",id);
         }
         return String.format("la commande %d n'existe pas",id);

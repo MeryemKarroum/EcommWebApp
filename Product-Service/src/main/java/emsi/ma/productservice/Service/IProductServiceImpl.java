@@ -2,7 +2,8 @@ package emsi.ma.productservice.Service;
 
 import emsi.ma.productservice.Entity.Product;
 import emsi.ma.productservice.Repository.ProductRepo;
-import emsi.ma.productservice.Service.IProductService;
+import emsi.ma.productservice.clients.CategoryRestClient;
+import jakarta.persistence.EntityNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -15,6 +16,8 @@ import java.util.Optional;
 public class IProductServiceImpl implements IProductService {
     @Autowired
     public ProductRepo productRepo;
+    @Autowired
+    public CategoryRestClient categoryRestClient;
     @Override
     public void addProduct(Product p) {
         productRepo.save(p);
@@ -33,9 +36,8 @@ public class IProductServiceImpl implements IProductService {
         Optional<Product> optionalProduct = productRepo.findById(id);
         if (optionalProduct.isPresent()) {
             Product product = optionalProduct.get();
-            product.setPrice(p.getPrice());
-            product.setCategory(p.getCategory());
             product.setName(p.getName());
+            product.setCategoryId(p.getCategoryId());
             product.setDescription(p.getDescription());
 
             productRepo.save(product);
@@ -47,7 +49,20 @@ public class IProductServiceImpl implements IProductService {
 
     @Override
     public Page<Product> findAllProducts(Pageable pageable) {
-        return  productRepo.findAll(pageable);
+
+        Page<Product> productList= productRepo.findAll(pageable);
+        productList.forEach(a->a.setCategory(categoryRestClient.getCategoryById(a.getCategoryId())));
+        return productList;
+    }
+
+    @Override
+    public Product findProductById(Integer id) {
+        Optional<Product> optionalProduct = productRepo.findById(id);
+        if (optionalProduct.isPresent()) {
+            return optionalProduct.get();
+        } else {
+            throw new EntityNotFoundException("Product with ID " + id + " not found");
+        }
     }
 
     @Override
@@ -56,8 +71,9 @@ public class IProductServiceImpl implements IProductService {
     }
 
     @Override
-    public List<Product> findProductsByCategory(String category) {
-        return productRepo.findAllByCategory(category);
+    public List<Product> findProductsByCategory(Integer category) {
+
+        return productRepo.findAllByCategoryId(category);
     }
 
     @Override

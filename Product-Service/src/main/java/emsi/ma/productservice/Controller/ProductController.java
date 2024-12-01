@@ -26,8 +26,12 @@ public class ProductController {
         return productService.updateProduct(id, p);
     }
 
+    @GetMapping("/{id}")
+    public Product getProductById(@PathVariable Integer id){
+        return productService.findProductById(id);
+    }
     @GetMapping
-    public Page<Product> afficherProduit(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size){
+    public Page<Product> getAllProducts(@RequestParam(defaultValue = "0") int page, @RequestParam(defaultValue = "10") int size){
       Pageable pageable= PageRequest.of(page, size);
      return productService.findAllProducts(pageable);
     }
@@ -37,11 +41,11 @@ public class ProductController {
         return productService.findProductsByName(productName);
     }
     @GetMapping("/search/category/{category}")
-    public List<Product> searchProductByCategory(@PathVariable String category){
+    public List<Product> searchProductByCategory(@PathVariable Integer category){
         return productService.findProductsByCategory(category);
     }
 
-    @GetMapping("/products/search/{price}")
+    @GetMapping("/search/{price}")
     public List<Product> searchProductByPrice(@PathVariable Double price){
         return productService.findProductsByPriceLessThan(price);
     }

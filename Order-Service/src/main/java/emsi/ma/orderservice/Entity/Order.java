@@ -1,5 +1,6 @@
 package emsi.ma.orderservice.Entity;
 
+import emsi.ma.orderservice.models.Product;
 import jakarta.persistence.*;
 import lombok.*;
 
@@ -17,5 +18,9 @@ public class Order {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     Integer orderId;
     Date orderDate;
-    Integer quantity;
+    Integer clientId;
+    @Transient
+    List<Product> product;
+    @ElementCollection
+    List<Integer> ProductIds;
 }
