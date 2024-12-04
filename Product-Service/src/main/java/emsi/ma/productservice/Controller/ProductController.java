@@ -5,7 +5,14 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
+import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
+
+import java.awt.*;
+import java.io.File;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
 
 @RestController
@@ -48,6 +55,15 @@ public class ProductController {
     @GetMapping("/search/{price}")
     public List<Product> searchProductByPrice(@PathVariable Double price){
         return productService.findProductsByPriceLessThan(price);
+    }
+
+    @GetMapping(path= "/imageProduct/{id}",produces = MediaType.IMAGE_PNG_VALUE)
+    public byte[] image(@PathVariable(name="id")Integer id)throws Exception{
+        Product p=productService.findProductById(id);
+        String image=p.getImage();
+        File file=new File("C:\\Users\\exe\\produit\\images\\"+image+".png");
+        Path path= Paths.get(file.toURI());
+        return Files.readAllBytes(path);
     }
 
 }

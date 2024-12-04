@@ -39,7 +39,7 @@ public class IProductServiceImpl implements IProductService {
             product.setName(p.getName());
             product.setCategoryId(p.getCategoryId());
             product.setDescription(p.getDescription());
-
+            product.setImage(p.getImage());
             productRepo.save(product);
             return "Produit modifié avec succès";
         }
@@ -80,4 +80,8 @@ public class IProductServiceImpl implements IProductService {
     public List<Product> findProductsByPriceLessThan(Double price) {
         return productRepo.findAllByPriceLessThan(price);
     }
+
+
+
+
 }

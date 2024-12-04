@@ -20,4 +20,5 @@ public class Product {
     @Transient
     public Category category;
     public Integer categoryId;
+    private String image;
 }

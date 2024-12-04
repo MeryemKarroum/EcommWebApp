@@ -5,45 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a73220b8-b7d0-49b5-aa6c-1447cdb050ce" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/Category-Service/src/main/java/meryem/categoryservice/Controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/Clients/ProductRestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderDetails-Service/src/main/java/meryem/orderdetailsservice/Controller/OrderDetailsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderDetails-Service/src/main/java/meryem/orderdetailsservice/Entity/OrderDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderDetails-Service/src/main/java/meryem/orderdetailsservice/Models/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderDetails-Service/src/main/java/meryem/orderdetailsservice/Models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderDetails-Service/src/main/java/meryem/orderdetailsservice/Repository/OrderDetailsRepo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderDetails-Service/src/main/java/meryem/orderdetailsservice/clients/OrderRestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OrderDetails-Service/src/main/java/meryem/orderdetailsservice/clients/ProductRestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/clients/CategoryRestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/models/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Category-Service/src/main/java/meryem/categoryservice/CategoryServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Category-Service/src/main/java/meryem/categoryservice/CategoryServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Category-Service/src/main/java/meryem/categoryservice/Entity/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/Category-Service/src/main/java/meryem/categoryservice/Entity/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Category-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Category-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Discovery-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Discovery-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/src/main/java/emsi/ma/gateway/GatewayApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/java/emsi/ma/gateway/GatewayApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Order-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/Entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/Entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/OrderServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/OrderServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/Repository/OrderRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/Repository/OrderRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/Service/OrderServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/Service/OrderServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/models/product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Order-Service/src/main/java/emsi/ma/orderservice/models/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderDetails-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OrderDetails-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderDetails-Service/src/main/java/meryem/orderdetailsservice/OrderDetailsServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/OrderDetails-Service/src/main/java/meryem/orderdetailsservice/OrderDetailsServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderDetails-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrderDetails-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Controller/ProductController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/ProductServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/ProductServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Repository/ProductRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Repository/ProductRepo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Service/IProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Service/IProductService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Service/IProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Service/IProductServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,13 +65,14 @@
     "git-widget-placeholder": "main",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/exe/IdeaProjects/Ecomm",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -126,7 +93,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.OrderDetailsServiceApplication">
+  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
     <configuration name="CategoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Category-Service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="meryem.categoryservice.CategoryServiceApplication" />
@@ -208,7 +175,10 @@
       <workItem from="1732984138211" duration="213000" />
       <workItem from="1732984387072" duration="6186000" />
       <workItem from="1732992682043" duration="13171000" />
-      <workItem from="1733048731360" duration="26927000" />
+      <workItem from="1733048731360" duration="27544000" />
+      <workItem from="1733226218147" duration="20000" />
+      <workItem from="1733303627887" duration="909000" />
+      <workItem from="1733330095746" duration="5905000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
