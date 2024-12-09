@@ -5,11 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a73220b8-b7d0-49b5-aa6c-1447cdb050ce" name="Changes" comment="First commit">
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/respositories/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/respositories/UserRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/security/JWTAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/security/MyUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/security/SecurityConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/services/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/services/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Controller/ProductController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Entity/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Entity/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Service/IProductServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Service/IProductServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Category-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Category-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Order-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderDetails-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrderDetails-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,9 +40,26 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="ROOT_SYNC" value="SYNC" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "MziouedDounia"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/MeryemKarroum/EcommWebApp.git",
+    "accountId": "929818bd-fe34-45da-b700-193fede9de88"
+  }
+}]]></component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
 }</component>
@@ -62,7 +93,8 @@
     "Spring Boot.OrderDetailsServiceApplication.executor": "Run",
     "Spring Boot.OrderServiceApplication.executor": "Run",
     "Spring Boot.ProductServiceApplication.executor": "Run",
-    "git-widget-placeholder": "main",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "git-widget-placeholder": "jwt__user__spring",
     "jdk.selected.JAVA_MODULE": "17",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/exe/IdeaProjects/Ecomm",
@@ -93,7 +125,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ProductServiceApplication">
+  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
     <configuration name="CategoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Category-Service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="meryem.categoryservice.CategoryServiceApplication" />
@@ -144,6 +176,14 @@
       </method>
     </configuration>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.19416.15" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.19416.15" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -179,6 +219,7 @@
       <workItem from="1733226218147" duration="20000" />
       <workItem from="1733303627887" duration="909000" />
       <workItem from="1733330095746" duration="5905000" />
+      <workItem from="1733704054423" duration="7644000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
