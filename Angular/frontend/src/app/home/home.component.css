@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&display=swap');
+
+.title {
+  font-family: "Allura", cursive;
+  font-size: 100px;
+  margin-top: 91px;
+  margin-left: 244px;
+}
+
+#selena{
+  width: 393px;
+  position: absolute;
+  margin-top: 192px;
+  margin-left: 66px;
+  z-index: 999;
+}
+
+#product{
+  width: 430px;
+  margin-left: 242px;
+  margin-top: 57px;
+}
+
+
+
+.title2 {
+  font-family: "Arial Rounded MT Bold", cursive;
+  font-size: 82px; /* Example customization */
+  margin-left: 227px;
+}
+.title3 {
+  font-family: "Arial Rounded MT Bold", cursive;
+  font-size: 82px; /* Example customization */
+  margin-left: 178px;
+}
+button {
+  background-color: white;
+  color: black;
+  width: 130px;
+  font-weight: 100;
+  heigth: 13px;
+  border: 2px solid #555555;
+  margin-top: 34px;
+  margin-left: 393px;
+}
