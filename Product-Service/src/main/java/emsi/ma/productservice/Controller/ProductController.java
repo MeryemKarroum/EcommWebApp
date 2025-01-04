@@ -47,7 +47,7 @@ public class ProductController {
     public List<Product> searchProductByName(@PathVariable String productName){
         return productService.findProductsByName(productName);
     }
-    @GetMapping("/search/category/{category}")
+    @GetMapping("/category/{category}")
     public List<Product> searchProductByCategory(@PathVariable Integer category){
         return productService.findProductsByCategory(category);
     }
