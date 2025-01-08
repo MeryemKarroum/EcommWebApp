@@ -1,5 +1,5 @@
 <!-- Category Selector -->
-<h3>Products for {{ category }} Category</h3>
+<h3>Products for {{ categoryName | async }} Category</h3>
 <!-- Product List -->
 <div class="products" *ngIf="products$ | async as products" >
   <div class="product-card" *ngFor="let product of products">
@@ -8,7 +8,7 @@
       <img [src]="getProductImage(product.id)" alt="{{ product.name }}" class="product-image" />
       <p class="price">{{ product.price }}MAD</p>
       <p>{{ product.description }}</p>
-      <p><button>Add to Cart</button></p>
+      <p><button (click)="addToCart(product)">Add to Cart</button></p>
     </div>
   </div>
 </div>

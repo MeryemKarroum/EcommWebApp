@@ -1,0 +1,57 @@
+<div class="container">
+  <h1>Your Shopping Cart</h1>
+
+  <div *ngIf="(cartItems$ | async) as cartItems">
+    <div *ngIf="cartItems.length === 0" class="empty-cart">
+      <p>Your cart is empty</p>
+      <a routerLink="/">Continue Shopping</a>
+    </div>
+
+    <div *ngIf="cartItems.length > 0">
+      <table class="cart-table">
+        <thead>
+        <tr>
+          <th>Product</th>
+          <th>Price</th>
+          <th>Quantity</th>
+          <th>Total</th>
+          <th>Actions</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let item of cartItems">
+          <td>
+            <div class="product-info">
+              <img [src]="item.image" [alt]="item.name" class="product-image">
+              <span>{{ item.name }}</span>
+            </div>
+          </td>
+          <td>{{ item.price | currency:'MAD' }}</td>
+          <td>
+            <div class="quantity-control">
+              <button (click)="updateQuantity(item.id, item.quantity - 1)"
+                      [disabled]="item.quantity === 1">-</button>
+              <span>{{ item.quantity }}</span>
+              <button (click)="updateQuantity(item.id, item.quantity + 1)">+</button>
+            </div>
+          </td>
+          <td>{{ item.price * item.quantity | currency:'MAD' }}</td>
+          <td>
+            <button (click)="removeFromCart(item.id)" class="remove-button">Remove</button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+
+      <div class="cart-summary">
+        <a routerLink="/" class="continue-shopping">Continue Shopping</a>
+        <div class="total-checkout">
+          <p class="total">Total: {{ getCartTotal() | currency:'MAD' }}</p>
+          <button (click)="checkout()" class="checkout-button">
+            Proceed to Checkout
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

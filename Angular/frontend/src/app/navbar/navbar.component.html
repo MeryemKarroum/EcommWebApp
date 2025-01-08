@@ -1,5 +1,6 @@
 
 <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 
 <nav role="navigation" class="primary-navigation">
   <ul>
@@ -14,5 +15,11 @@
     </li>
     <li><a href="#">About</a></li>
     <li><a href="#">Contact</a></li>
+    <li>
+      <a routerLink="/cart" class="cart-icon">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="cart-count" *ngIf="cartItemCount$ | async as count">{{ count }}</span>
+      </a>
+    </li>
   </ul>
 </nav>
