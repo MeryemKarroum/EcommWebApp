@@ -7,6 +7,8 @@ import {ProductFormComponent} from './admin/product-form/product-form.component'
 import {ProductAdminlistComponent} from './admin/product-adminlist/product-adminlist.component';
 import {UserListComponent} from './admin/user-list/user-list.component';
 import {OrderListComponent} from './admin/order-list/order-list.component';
+import {LoginComponent} from './login/login.component';
+import {RegisterComponent} from './register/register.component';
 
 
 export const routes: Routes = [
@@ -19,6 +21,8 @@ export const routes: Routes = [
   { path: 'admin/products', component: ProductAdminlistComponent },
   { path: 'admin/users', component: UserListComponent },
   { path: 'admin/orders', component: OrderListComponent },
+  { path: 'login', component : LoginComponent},
+  { path: 'register', component : RegisterComponent}
 ];
 
 
