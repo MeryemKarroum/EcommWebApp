@@ -1,18 +1,35 @@
 package meryem.userservice.entities;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
+import jakarta.transaction.Transactional;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data @NoArgsConstructor @AllArgsConstructor
+import java.util.List;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+@Transactional
 @Entity
 public class Role {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long roleId;
-    private String role;
+    private Long id;
+    private String roleName;
+    @OneToMany(mappedBy = "role")
+    private List<User> users;
+
+    public Role(String roleName) {
+        this.roleName = roleName;
+    }
+
+    @Override
+    public String toString() {
+        return "Role{" +
+                "id=" + id +
+                ", roleName='" + roleName + '\'' +
+                '}';
+    }
 }
