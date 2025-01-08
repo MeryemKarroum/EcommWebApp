@@ -6,6 +6,12 @@
   font-family: arial;
 }
 
+.products{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
 .price {
   color: grey;
   font-size: 22px;
@@ -27,6 +33,12 @@
   opacity: 0.7;
 }
 
-.products{
-  display: flex;
+
+img{
+  width:298.4px;
+  height:298.4px;
+}
+
+h1{
+  font-size: 25px;
 }

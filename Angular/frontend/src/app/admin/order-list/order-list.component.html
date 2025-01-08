@@ -1,0 +1,19 @@
+<h2>Order List</h2>
+<table>
+  <thead>
+  <tr>
+    <th>ID</th>
+    <th>User</th>
+    <th>Total</th>
+    <th>Date</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let order of orders">
+    <td>{{ order.id }}</td>
+    <td>{{ order.user }}</td>
+    <td>{{ order.total | currency }}</td>
+    <td>{{ order.date | date }}</td>
+  </tr>
+  </tbody>
+</table>

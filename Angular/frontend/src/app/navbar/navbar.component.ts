@@ -1,8 +1,9 @@
 import { Component, inject, OnInit } from '@angular/core'; // Import CategoryService
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
-import {AsyncPipe, NgForOf} from '@angular/common';
+import {map, Observable} from 'rxjs';
+import {AsyncPipe, NgForOf, NgIf} from '@angular/common';
 import {RouterLink} from '@angular/router';
+import {CartService} from '../service/cart.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,17 +12,23 @@ import {RouterLink} from '@angular/router';
   imports: [
     NgForOf,
     AsyncPipe,
-    RouterLink
+    RouterLink,
+    NgIf
   ],
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
   private http = inject(HttpClient);  // Inject HttpClient
   categories: any[] = [];
+  cartItemCount$!: Observable<number>;
+  constructor(private cartService: CartService) {}
   ngOnInit(): void {
     this.getCategories().subscribe((categories) => {
       this.categories = categories;
     });
+    this.cartItemCount$ = this.cartService.cart$.pipe(
+      map(items => items.reduce((total, item) => total + item.quantity, 0))
+    );
   }
 
   getCategories():Observable<any[]>{

@@ -1,0 +1,29 @@
+.login-container {
+  background: linear-gradient(135deg, #fce4ec, #e1bee7);
+}
+
+.card {
+  border-radius: 15px;
+}
+
+.card-title {
+  color: #6a1b9a;
+}
+
+.btn-primary {
+  background-color: #8e24aa;
+  border-color: #8e24aa;
+}
+
+.btn-primary:hover {
+  background-color: #6a1b9a;
+  border-color: #6a1b9a;
+}
+
+a {
+  color: #8e24aa;
+}
+
+a:hover {
+  color: #6a1b9a;
+}
