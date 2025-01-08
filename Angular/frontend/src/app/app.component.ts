@@ -12,10 +12,12 @@ import {ProductAdminlistComponent} from './admin/product-adminlist/product-admin
 import {OrderListComponent} from './admin/order-list/order-list.component';
 import {ProductFormComponent} from './admin/product-form/product-form.component';
 import {UserListComponent} from './admin/user-list/user-list.component';
+import {LoginComponent} from './login/login.component';
+import {RegisterComponent} from './register/register.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, HomeComponent, ProductListComponent, CartComponent, AdminNavbarComponent, AdminDashboardComponent, NgIf,ProductAdminlistComponent,OrderListComponent,ProductFormComponent,UserListComponent],
+  imports: [RouterOutlet, NavbarComponent, HomeComponent, ProductListComponent, CartComponent, AdminNavbarComponent, AdminDashboardComponent, NgIf,ProductAdminlistComponent,OrderListComponent,ProductFormComponent,UserListComponent,LoginComponent,RegisterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

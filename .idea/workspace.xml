@@ -5,27 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a73220b8-b7d0-49b5-aa6c-1447cdb050ce" name="Changes" comment="First commit">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Angular/frontend/src/app/admin/models/product.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Angular/frontend/src/app/admin/service/product.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Angular/frontend/src/app/models/cartItem.model.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Angular/frontend/src/app/service/cart.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Angular/frontend/src/app/service/category.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/app.component.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/category.service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/home/home.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/navbar/navbar.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/navbar/navbar.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/navbar/navbar.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/product-list/product-list.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/product-list/product-list.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/product-list/product-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/product-list/product-list.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/product-list/product-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/product-list/product-list.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/product.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/service/product.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Order-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Order-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Controller/ProductController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,7 +206,7 @@
       <workItem from="1736077955540" duration="18995000" />
       <workItem from="1736106647180" duration="8448000" />
       <workItem from="1736152131080" duration="3926000" />
-      <workItem from="1736281924193" duration="7169000" />
+      <workItem from="1736281924193" duration="9027000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />
