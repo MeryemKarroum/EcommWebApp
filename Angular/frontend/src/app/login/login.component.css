@@ -1,5 +1,5 @@
 .login-container {
-  background: linear-gradient(135deg, #fce4ec, #e1bee7);
+  background: linear-gradient(135deg, #FFE6A9, #FFE6A9);
 }
 
 .card {
@@ -7,23 +7,23 @@
 }
 
 .card-title {
-  color: #6a1b9a;
+  color: #cb9455;
 }
 
 .btn-primary {
-  background-color: #8e24aa;
-  border-color: #8e24aa;
+  background-color: #cb9455;
+  border-color: #cb9455;
 }
 
 .btn-primary:hover {
-  background-color: #6a1b9a;
-  border-color: #6a1b9a;
+  background-color: #cb9455;
+  border-color: #cb9455;
 }
 
 a {
-  color: #8e24aa;
+  color: #cb9455;
 }
 
 a:hover {
-  color: #6a1b9a;
+  color: #cb9455;
 }

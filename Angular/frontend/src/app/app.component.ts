@@ -28,4 +28,7 @@ export class AppComponent {
     // If the URL starts with '/admin', show the admin navbar
     return !this.router.url.startsWith('/admin');
   }
+
+
+
 }
