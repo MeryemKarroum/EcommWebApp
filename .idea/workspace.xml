@@ -62,7 +62,7 @@
       <recent name="C:\Users\exe\IdeaProjects\MicrosericeProject\ECommerce\Ecomm" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.GatewayApplication">
+  <component name="RunManager">
     <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Gateway" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="emsi.ma.gateway.GatewayApplication" />
