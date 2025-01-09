@@ -1,9 +1,10 @@
-import { Component, inject, OnInit } from '@angular/core'; // Import CategoryService
+import { Component, inject, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {map, Observable} from 'rxjs';
-import {AsyncPipe, NgForOf, NgIf} from '@angular/common';
-import {RouterLink} from '@angular/router';
-import {CartService} from '../service/cart.service';
+import { map, Observable } from 'rxjs';
+import { AsyncPipe, NgForOf, NgIf } from '@angular/common';
+import { RouterLink } from '@angular/router';
+import { CartService } from '../service/cart.service';
+import { AuthorizationService } from '../service/authorization.service';
 
 @Component({
   selector: 'app-navbar',
@@ -18,10 +19,16 @@ import {CartService} from '../service/cart.service';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  private http = inject(HttpClient);  // Inject HttpClient
+  private http = inject(HttpClient);
   categories: any[] = [];
   cartItemCount$!: Observable<number>;
-  constructor(private cartService: CartService) {}
+  isClient: boolean = false;
+
+  constructor(
+    private cartService: CartService,
+    private authorizationService: AuthorizationService
+  ) {}
+
   ngOnInit(): void {
     this.getCategories().subscribe((categories) => {
       this.categories = categories;
@@ -29,13 +36,10 @@ export class NavbarComponent implements OnInit {
     this.cartItemCount$ = this.cartService.cart$.pipe(
       map(items => items.reduce((total, item) => total + item.quantity, 0))
     );
+    this.isClient = this.authorizationService.hasRole('CLIENT');
   }
 
-  getCategories():Observable<any[]>{
-    // Replace this with your API call
+  getCategories(): Observable<any[]> {
     return this.http.get<any[]>(`http://localhost:8080/CATEGORY-SERVICE/categories`);
   }
-
 }
-
-

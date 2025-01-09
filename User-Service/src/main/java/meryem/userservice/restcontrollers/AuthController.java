@@ -59,41 +59,26 @@ public class AuthController {
         }
     }
 
-//    @PostMapping("/login")
-//    public ResponseEntity<Void> loginUser(@RequestBody UserLogin userLogin) {
-//        System.out.println("Logging in user: " + userLogin);
-//        try {
-//            String token = accountService.loginUser(userLogin.getUsername(), userLogin.getPassword());
-//            if (token == null) {
-//                return ResponseEntity.badRequest().build(); // Return 400 if invalid credentials
-//            }
-//            // Add token to the Authorization header
-//            return ResponseEntity.ok()
-//                    .header("Authorization", SecurityParameters.PREFIX + " " + token)
-//                    .build();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//            System.out.println("Login failed: " + e.getMessage());
-//            return ResponseEntity.status(500).build(); // Return 500 if an error occurs
-//        }
-//    }
-
-        @PostMapping("/login")
-        public ResponseEntity<Map<String, String>> loginUser(@RequestBody UserLogin userLogin) {
-            System.out.println("Logging in user: " + userLogin);
-            Map<String, String> response = new HashMap<>();
-            try {
-                String token = accountService.loginUser(userLogin.getUsername(), userLogin.getPassword());
-                if (token == null) {
-                    response.put("message", "Invalid credentials");
-                    return ResponseEntity.badRequest().body(response);
-                }
-                response.put("token", token);
-                return ResponseEntity.ok(response);
-            } catch (Exception e) {
-                e.printStackTrace();
-                response.put("message", "Login failed: " + e.getMessage());
-                return ResponseEntity.status(500).body(response);
+    @PostMapping("/login")
+    public ResponseEntity<Map<String, String>> loginUser(@RequestBody UserLogin userLogin) {
+        System.out.println("Logging in user: " + userLogin);
+        Map<String, String> response = new HashMap<>();
+        try {
+            String token = accountService.loginUser(userLogin.getUsername(), userLogin.getPassword());
+            if (token == null) {
+                response.put("message", "Invalid credentials");
+                return ResponseEntity.badRequest().body(response);
             }
+            response.put("token", token);
+            return ResponseEntity.ok(response);
+        } catch (Exception e) {
+            e.printStackTrace();
+            response.put("message", "Login failed: " + e.getMessage());
+            return ResponseEntity.status(500).body(response);
         }
+    }
+@GetMapping("roles")
+    public ResponseEntity<?> getRoles() {
+        return ResponseEntity.ok(accountService.getRoles());
+    }
 }

@@ -39,14 +39,6 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers("/api/auth/register").permitAll()
                         .requestMatchers("/api/auth/login").permitAll()
-                        .requestMatchers(HttpMethod.GET, "/api/users/all").hasAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.GET, "/api/products/all").hasAnyAuthority("ADMIN", "CASHIER", "USER")
-                        .requestMatchers(HttpMethod.GET, "/api/products/**").hasAnyAuthority("ADMIN", "CASHIER", "USER")
-                        .requestMatchers(HttpMethod.GET, "/api/categories/all").hasAnyAuthority("ADMIN", "CASHIER", "USER")
-                        .requestMatchers(HttpMethod.GET, "/api/categories/**").hasAnyAuthority("ADMIN", "CASHIER", "USER")
-                        .requestMatchers(HttpMethod.POST, "/api/products/save").hasAuthority("CREATE")
-                        .requestMatchers(HttpMethod.DELETE, "/api/products/delete/**").hasAuthority("ADMIN")
-                        .requestMatchers(HttpMethod.PUT, "/api/products/update").hasAuthority("ADMIN")
                         .anyRequest().authenticated()
                 )
                 .addFilterBefore(new JWTAuthenticationFilter(authenticationManager), UsernamePasswordAuthenticationFilter.class) // Add JWTAuthenticationFilter

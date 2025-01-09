@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {Router} from '@angular/router';
+import {AuthorizationService} from '../../service/authorization.service';
 
 @Component({
   selector: 'app-admin-dashboard',
@@ -15,10 +17,19 @@ export class AdminDashboardComponent implements OnInit {
     totalOrders: 1000,
     recentOrders: 50
   };
-
-  constructor() { }
+  constructor(
+    private router: Router,
+    private authorizationService: AuthorizationService
+  ) {}
 
   ngOnInit(): void {
-    // In the future, we'll fetch real data here
+    this.checkAdminRole();
+  }
+
+  checkAdminRole() {
+    if (!this.authorizationService.hasRole('ADMIN')) {
+      console.error('Access denied');
+      this.router.navigate(['/access-denied']);
+    }
   }
 }

@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a73220b8-b7d0-49b5-aa6c-1447cdb050ce" name="Changes" comment="merge commit" />
+    <list default="true" id="a73220b8-b7d0-49b5-aa6c-1447cdb050ce" name="Changes" comment="merge commit">
+      <change afterPath="$PROJECT_DIR$/Angular/frontend/src/app/service/authorization.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/admin/admin-dashboard/admin-dashboard.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/admin/admin-dashboard/admin-dashboard.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/cart-page/cart-page.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/cart-page/cart-page.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/navbar/navbar.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/navbar/navbar.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Angular/frontend/src/app/service/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Angular/frontend/src/app/service/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Category-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Category-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Order-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Order-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Controller/ProductController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/java/emsi/ma/productservice/Controller/ProductController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Product-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Product-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/dtos/UserRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/dtos/UserRegister.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/entities/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/entities/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/restcontrollers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/restcontrollers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/services/AccountService.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/meryem/userservice/services/AccountService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,6 +36,7 @@
         <option value="package-info" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -55,39 +76,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.CategoryServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.DiscoveryServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderDetailsServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.OrderServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.ProductServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserServiceApplication (1).executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.UserServiceApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;jwt__user__spring&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/Dounia/Documents/S9/Ecom_Jee_Angular/EcommWebApp/User-Service/src/main/java/meryem/userservice/entities&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Dounia/Documents/S9/Ecom_Jee_Angular/EcommWebApp/User-Service/src/main/java/meryem/userservice&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Dounia\\AppData\\Local\\JetBrains\\IntelliJ IDEA 2024.1.4\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.CategoryServiceApplication.executor": "Run",
+    "Spring Boot.DiscoveryServiceApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
+    "Spring Boot.OrderDetailsServiceApplication.executor": "Run",
+    "Spring Boot.OrderServiceApplication.executor": "Run",
+    "Spring Boot.ProductServiceApplication.executor": "Run",
+    "Spring Boot.UserServiceApplication (1).executor": "Run",
+    "Spring Boot.UserServiceApplication.executor": "Run",
+    "git-widget-placeholder": "jwt__user__spring",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/Dounia/Documents/S9/Ecom_Jee_Angular/EcommWebApp/User-Service/src/main/java/meryem/userservice/entities",
+    "last_opened_file_path": "C:/Users/Dounia/Documents/S9/Ecom_Jee_Angular/EcommWebApp/User-Service/src/main/java/meryem/userservice",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "C:\\Users\\Dounia\\Documents\\S9\\Ecom_Jee_Angular\\EcommWebApp\\Angular\\frontend\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Dounia\Documents\S9\Ecom_Jee_Angular\EcommWebApp\User-Service\src\main\java\meryem\userservice" />
@@ -226,6 +247,7 @@
       <workItem from="1736200753454" duration="1121000" />
       <workItem from="1736201941950" duration="12079000" />
       <workItem from="1736263991560" duration="10313000" />
+      <workItem from="1736376720658" duration="10595000" />
     </task>
     <task id="LOCAL-00001" summary="First commit">
       <option name="closed" value="true" />

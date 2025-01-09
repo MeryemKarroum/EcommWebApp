@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators';
 })
 export class UserService {
   private http = inject(HttpClient);
-  private apiUrl = 'http://localhost:8084/api/auth';
+  private apiUrl = 'http://localhost:8089/api/auth';
 
   constructor() {}
 

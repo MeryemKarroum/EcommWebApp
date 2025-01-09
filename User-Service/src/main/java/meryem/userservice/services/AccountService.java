@@ -71,6 +71,7 @@ public class AccountService {
 
     private User convertToUser(UserRegister userRegister) {
         User user = new User();
+        user.setId(userRegister.getId());
         user.setUsername(userRegister.getUsername());
         user.setPassword(bCryptPasswordEncoder.encode(userRegister.getPassword()));
         user.setEmail(userRegister.getEmail());
@@ -109,5 +110,9 @@ public class AccountService {
     public Role findRoleByRoleName(String roleName) {
         logger.info("Finding role by role name: {}", roleName);
         return roleRepository.findByRoleName(roleName);
+    }
+
+    public Object getRoles() {
+        return roleRepository.findAll();
     }
 }

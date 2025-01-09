@@ -29,7 +29,7 @@ public class ProductController {
                     @RequestParam("categoryId") Integer categoryId,
                     @RequestParam("image") MultipartFile image) throws Exception {
         // Chemin où l'image sera enregistrée
-        String folderPath = "C:\\Users\\exe\\IdeaProjects\\Ecomm\\Product-Service\\src\\main\\resources\\images\\";
+        String folderPath = "C:\\Users\\Dounia\\Documents\\S9\\Ecom_Jee_Angular\\EcommWebApp\\Product-Service\\src\\main\\resources\\images";
         String imageName = image.getOriginalFilename();
 
         // Supprimer l'extension du nom de l'image (si présente)
@@ -90,7 +90,7 @@ public class ProductController {
     public byte[] image(@PathVariable(name="id")Integer id)throws Exception{
         Product p=productService.findProductById(id);
         String image=p.getImage();
-        File file=new File("C:\\Users\\exe\\IdeaProjects\\Ecomm\\Product-Service\\src\\main\\resources\\images\\"+image+".png");
+        File file=new File("C:\\Users\\Dounia\\Documents\\S9\\Ecom_Jee_Angular\\EcommWebApp\\Product-Service\\src\\main\\resources\\images\\"+image+".png");
         Path path= Paths.get(file.toURI());
         return Files.readAllBytes(path);
     }

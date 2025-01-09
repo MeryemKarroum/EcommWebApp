@@ -9,6 +9,7 @@ import {UserListComponent} from './admin/user-list/user-list.component';
 import {OrderListComponent} from './admin/order-list/order-list.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
+import {AccessDeniedComponent} from './access-denied/access-denied.component';
 
 
 export const routes: Routes = [
@@ -22,7 +23,8 @@ export const routes: Routes = [
   { path: 'admin/users', component: UserListComponent },
   { path: 'admin/orders', component: OrderListComponent },
   { path: 'login', component : LoginComponent},
-  { path: 'register', component : RegisterComponent}
+  { path: 'register', component : RegisterComponent},
+  { path: 'access-denied', component : AccessDeniedComponent}
 ];
 
 
